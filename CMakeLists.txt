@@ -16,7 +16,7 @@ FetchContent_Declare(
     # GIT_REPOSITORY https://dev.hszofficial.site:9080/Mirror/grpc.git 
     GIT_REPOSITORY https://github.com/grpc/grpc.git
     GIT_TAG        v1.38.1
-    TLS_VERIFY     FALSE
+    # TLS_VERIFY     FALSE
 )
 FetchContent_MakeAvailable(grpc)
 # Since FetchContent uses add_subdirectory under the hood, we can use
@@ -33,7 +33,7 @@ FetchContent_Declare(json
   # GIT_REPOSITORY https://dev.hszofficial.site:9080/Mirror/nlohmann-json.git  
   GIT_REPOSITORY https://github.com/nlohmann/json.git
   GIT_TAG        v3.7.3
-  TLS_VERIFY     FALSE
+#   TLS_VERIFY     FALSE
 )
 FetchContent_GetProperties(json)
 if(NOT json_POPULATED)
@@ -47,7 +47,7 @@ FetchContent_Declare(spdlog
   # GIT_REPOSITORY https://dev.hszofficial.site:9080/Mirror/spdlog.git 
   GIT_REPOSITORY https://github.com/gabime/spdlog.git
   GIT_TAG        v1.8.2
-  TLS_VERIFY     FALSE
+#   TLS_VERIFY     FALSE
 )
 FetchContent_GetProperties(spdlog)
 if(NOT spdlog_POPULATED)
@@ -61,7 +61,7 @@ FetchContent_Declare(argparse
   #GIT_REPOSITORY https://dev.hszofficial.site:9080/Mirror/argparse.git 
   GIT_REPOSITORY https://github.com/p-ranav/argparse.git
   GIT_TAG        9903a22904fed8176c4a1f69c4b691304b23c78e
-  TLS_VERIFY     FALSE
+#   TLS_VERIFY     FALSE
 )
 FetchContent_GetProperties(argparse)
 if(NOT argparse_POPULATED)
