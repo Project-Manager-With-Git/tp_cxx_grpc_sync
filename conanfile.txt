@@ -1,0 +1,8 @@
+[requires]
+spdlog/1.9.0
+protobuf/3.15.5
+grpc/1.37.0
+
+
+[generators]
+cmake
