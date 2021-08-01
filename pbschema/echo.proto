@@ -1,13 +1,10 @@
 syntax = "proto3";
 package echo;
-option go_package = "echo_pb";
+option go_package = "echo";
 
-service ECHO {
-    rpc Square (Message) returns (Message){}
-    rpc RangeSquare (Message) returns (stream Message){}
-    rpc SumSquare (stream Message) returns (Message){}
-    rpc StreamrangeSquare (stream Message) returns (stream Message){}
+service ECHO_RPC {
+    rpc echo (Message) returns (Message){}
 }
 message Message {
-    double message = 1;
+    string message = 1;
 }
