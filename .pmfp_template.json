@@ -40,6 +40,16 @@
             "description": "提供vscode的容器环境,方便统一环境调试",
             "default_path": "dev_env.dockerfile"
         },
+        "docker-compose": {
+            "source": "cp_dockercompose//server_standalone",
+            "description": "通用的服务使用的dockercompose,适用于调试",
+            "default_path": "docker-compose.yml"
+        },
+        "dockerfile": {
+            "source": "cp_dockerfiles//cxx_grpc_scratch_dockerfile",
+            "description": "构造grpc项目的dockerfile",
+            "default_path": "dockerfile"
+        },
         "main": {
             "source": "cp_cxx_grpc//main",
             "description": "定义项目的入口函数",
