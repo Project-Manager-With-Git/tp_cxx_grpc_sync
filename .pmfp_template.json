@@ -21,52 +21,52 @@
     },
     "components": {
         "service_schema": {
-            "source": "cp_cxx_grpc//service_schema",
+            "source": "cp_cxx_grpc@v0.0.1//service_schema",
             "description": "项目定义service的proto文件",
             "default_path": "pbschema/{{ serv_name }}.proto"
         },
         "requirement":{
-            "source": "cp_cxx_grpc//requirement",
+            "source": "cp_cxx_grpc@v0.0.1//requirement",
             "description": "描述依赖的conan配置",
             "default_path": "conanfile.txt"
         },
         "cmakefile":{
-            "source": "cp_cxx_grpc//cmakefile",
+            "source": "cp_cxx_grpc@v0.0.1//cmakefile",
             "description": "描述cmake编译过程",
             "default_path": "CMakeLists.txt"
         },
         "dev_env_vc_container":{
-            "source": "cp_cxx_grpc//dev_env_vc_container",
+            "source": "cp_cxx_grpc@v0.0.1//dev_env_vc_container",
             "description": "提供vscode的容器环境,方便统一环境调试",
             "default_path": "dev_env.dockerfile"
         },
         "docker-compose": {
-            "source": "cp_dockercompose//server_standalone",
+            "source": "cp_dockercompose@v0.0.2//server_standalone",
             "description": "通用的服务使用的dockercompose,适用于调试",
             "default_path": "docker-compose.yml"
         },
         "dockerfile": {
-            "source": "cp_dockerfiles//cxx_grpc_scratch_dockerfile",
+            "source": "cp_dockerfiles@v0.0.1//cxx_grpc_scratch_dockerfile",
             "description": "构造grpc项目的dockerfile",
             "default_path": "dockerfile"
         },
         "main": {
-            "source": "cp_cxx_grpc//main",
+            "source": "cp_cxx_grpc@v0.0.1//main",
             "description": "定义项目的入口函数",
             "default_path": "src/main.cc"
         },
         "sync_serv_handdler": {
-            "source": "cp_cxx_grpc//sync_serv_handdler",
+            "source": "cp_cxx_grpc@v0.0.1//sync_serv_handdler",
             "description": "grpc同步服务端处理实现部分模板",
             "default_path": "src/{{ serv_name }}_serv/handler.cc"
         },
         "sync_serv_serv": {
-            "source": "cp_cxx_grpc//sync_serv_serv",
+            "source": "cp_cxx_grpc@v0.0.1//sync_serv_serv",
             "description": "grpc同步服务端的服务定义模块模板",
             "default_path": "src/{{ serv_name }}_serv/serv.cc"
         },
         "sync_serv_header": {
-            "source": "cp_cxx_grpc//sync_serv_header",
+            "source": "cp_cxx_grpc@v0.0.1//sync_serv_header",
             "description": "grpc同步服务端模块的头文件模板",
             "default_path": "src/{{ serv_name }}_serv/{{ serv_name }}_serv.h"
         }
