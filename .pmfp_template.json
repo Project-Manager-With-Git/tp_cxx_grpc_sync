@@ -21,22 +21,22 @@
     },
     "components": {
         "service_schema": {
-            "source": "cp_cxx_grpc@v0.0.2//service_schema",
+            "source": "cp_cxx_grpc@dev//service_schema",
             "description": "项目定义service的proto文件",
             "default_path": "pbschema/{{ serv_name }}.proto"
         },
         "requirement":{
-            "source": "cp_cxx_grpc@v0.0.2//requirement",
+            "source": "cp_cxx_grpc@dev//requirement",
             "description": "描述依赖的conan配置",
             "default_path": "conanfile.txt"
         },
         "cmakefile":{
-            "source": "cp_cxx_grpc@v0.0.2//cmakefile",
+            "source": "cp_cxx_grpc@dev//cmakefile",
             "description": "描述cmake编译过程",
             "default_path": "CMakeLists.txt"
         },
         "dev_env_vc_container":{
-            "source": "cp_cxx_grpc@v0.0.2//dev_env_vc_container",
+            "source": "cp_cxx_grpc@dev//dev_env_vc_container",
             "description": "提供vscode的容器环境,方便统一环境调试",
             "default_path": "dev_env.dockerfile"
         },
@@ -51,12 +51,12 @@
             "default_path": "dockerfile"
         },
         "main": {
-            "source": "cp_cxx_grpc@v0.0.2//main",
+            "source": "cp_cxx_grpc@dev//main",
             "description": "定义项目的入口函数",
             "default_path": "src/main.cc"
         },
         "sync_serv_handdler": {
-            "source": "cp_cxx_grpc@v0.0.2//sync_serv_handdler",
+            "source": "cp_cxx_grpc@dev//sync_serv_handdler",
             "description": "grpc同步服务端处理实现部分模板",
             "default_path": "src/{{ serv_name }}_serv/handler.cc"
         },
@@ -66,7 +66,7 @@
             "default_path": "src/{{ serv_name }}_serv/serv.cc"
         },
         "sync_serv_header": {
-            "source": "cp_cxx_grpc@v0.0.2//sync_serv_header",
+            "source": "cp_cxx_grpc@dev//sync_serv_header",
             "description": "grpc同步服务端模块的头文件模板",
             "default_path": "src/{{ serv_name }}_serv/{{ serv_name }}_serv.h"
         }
